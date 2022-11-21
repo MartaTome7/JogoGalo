@@ -1,0 +1,91 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid {
+  height: 400px;
+}
+
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+:host ::ng-deep .button {
+  width: 50px;
+  height: 50px;
+  border-bottom-color: rgb(0, 0, 0);
+}
+
+:host ::ng-deep .button:hover {
+  background: rgb(136, 206, 208);
+}
+
+:host ::ng-deep .button:active {
+  position: relative;
+  top: 1px;
+}
+
+.column3 {
+  float: left;
+  width: 150px;
+}
+
+.buttonTerminar, .buttonJogarNovamente {
+  width: 120px;
+  height: 30px;
+  border-bottom-color: rgb(0, 0, 0);
+  background-color: rgb(246, 255, 255);
+}
+
+.buttonTerminar:hover{
+  background: rgb(136, 206, 208);
+}
+
+.buttonTerminar:active{
+  position: relative;
+  top: 1px;
+}
+
+.buttonJogarNovamente:hover{
+  background: rgb(136, 206, 208);
+}
+
+.buttonJogarNovamente:active{
+  position: relative;
+  top: 1px;
+}
+
+.space1{
+  height: 15px;
+}
+
+.space2{
+  height: 20px;
+}
+
+.text{
+  margin-top: 50px;
+}
+
+tbody tr td{
+  padding: 10px;
+  min-width: 50px;
+}
+
+tbody tr:nth-child(odd) td{
+  background-color: rgb(136, 206, 208);
+  color: rgb(0, 0, 0);
+}
+
+tbody tr:nth-child(even) td{
+  background-color: rgb(246, 255, 255);
+  color: rgb(0, 0, 0);
+}

@@ -1,0 +1,56 @@
+<div class="space2"></div>
+
+<div class="row">
+  <div class="column">
+    <div class="row">
+      <div class="column3" id="grelha"></div>
+    </div>
+  </div>
+  <div class="column">
+    <button
+      class="buttonTerminar"
+      type="button"
+      id="btnTerminarJogada"
+      (click)="terminarJogada()"
+      [disabled]="isbtnTerminarJogadaDisabled"
+    >
+      Terminar jogada
+    </button>
+
+    <div class="space1"></div>
+    
+    <button
+      class="buttonJogarNovamente"
+      type="button"
+      id="btnJogarNovamente"
+      (click)="jogarNovamente()"
+      [disabled]="isbtnJogarNovamenteDisabled"
+    >
+      Jogar novamente
+    </button>
+    
+    <h3 class="text"> Peça em jogo: <span id="txtPecaemJogo"></span></h3>
+
+  </div>
+</div>
+
+<div class="space2"></div>
+
+<div class="row">
+  <table>
+    <tbody id="tabDados">
+      <tr>
+        <td>Vitórias do jogador 1 </td>
+        <td id="nrVitorias1"></td>
+      </tr>
+      <tr>
+        <td>Vitórias do jogador 2 </td>
+        <td id="nrVitorias2"></td>
+      </tr>
+      <tr>
+        <td>Empates </td>
+        <td id="nrEmpates"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
